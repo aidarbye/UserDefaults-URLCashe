@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		B43C304C29B3CB5F0041407D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C304B29B3CB5F0041407D /* AppDelegate.swift */; };
 		B43C304E29B3CB5F0041407D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C304D29B3CB5F0041407D /* SceneDelegate.swift */; };
-		B43C305029B3CB5F0041407D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C304F29B3CB5F0041407D /* ViewController.swift */; };
 		B43C305329B3CB5F0041407D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43C305129B3CB5F0041407D /* Main.storyboard */; };
 		B43C305529B3CB600041407D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43C305429B3CB600041407D /* Assets.xcassets */; };
 		B43C305829B3CB600041407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43C305629B3CB600041407D /* LaunchScreen.storyboard */; };
+		B43C306429B3D0910041407D /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306329B3D0910041407D /* ContactsTableViewController.swift */; };
+		B43C306629B3D4C10041407D /* CasheTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306529B3D4C10041407D /* CasheTableViewController.swift */; };
+		B43C306829B3D59D0041407D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306729B3D59D0041407D /* NetworkManager.swift */; };
+		B43C306A29B3D5AA0041407D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306929B3D5AA0041407D /* StorageManager.swift */; };
+		B43C306C29B3D5DF0041407D /* RickAndMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306B29B3D5DF0041407D /* RickAndMorty.swift */; };
+		B43C306E29B3D5EB0041407D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C306D29B3D5EB0041407D /* Contact.swift */; };
+		B43C307129B3D61A0041407D /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C307029B3D61A0041407D /* ContactTableViewCell.swift */; };
+		B43C307329B3D6360041407D /* RickAndMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C307229B3D6360041407D /* RickAndMortyTableViewCell.swift */; };
+		B43C307529B3DDDC0041407D /* AddNewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C307429B3DDDC0041407D /* AddNewContactViewController.swift */; };
+		B43C307729B3DFB00041407D /* CharachterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C307629B3DFB00041407D /* CharachterImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B43C304829B3CB5F0041407D /* UserDefaults_URLCashe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserDefaults_URLCashe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43C304B29B3CB5F0041407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B43C304D29B3CB5F0041407D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B43C304F29B3CB5F0041407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B43C305229B3CB5F0041407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B43C305429B3CB600041407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B43C305729B3CB600041407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B43C305929B3CB600041407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43C306329B3D0910041407D /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		B43C306529B3D4C10041407D /* CasheTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasheTableViewController.swift; sourceTree = "<group>"; };
+		B43C306729B3D59D0041407D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B43C306929B3D5AA0041407D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B43C306B29B3D5DF0041407D /* RickAndMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty.swift; sourceTree = "<group>"; };
+		B43C306D29B3D5EB0041407D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B43C307029B3D61A0041407D /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		B43C307229B3D6360041407D /* RickAndMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTableViewCell.swift; sourceTree = "<group>"; };
+		B43C307429B3DDDC0041407D /* AddNewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactViewController.swift; sourceTree = "<group>"; };
+		B43C307629B3DFB00041407D /* CharachterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharachterImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,64 @@
 		B43C304A29B3CB5F0041407D /* UserDefaults_URLCashe */ = {
 			isa = PBXGroup;
 			children = (
+				B43C306F29B3D6010041407D /* Cells */,
+				B43C306229B3CC3A0041407D /* Service */,
+				B43C306129B3CC310041407D /* Models */,
+				B43C306029B3CC220041407D /* Controllers */,
+				B43C305129B3CB5F0041407D /* Main.storyboard */,
+				B43C305F29B3CC120041407D /* Supports */,
+			);
+			path = UserDefaults_URLCashe;
+			sourceTree = "<group>";
+		};
+		B43C305F29B3CC120041407D /* Supports */ = {
+			isa = PBXGroup;
+			children = (
 				B43C304B29B3CB5F0041407D /* AppDelegate.swift */,
 				B43C304D29B3CB5F0041407D /* SceneDelegate.swift */,
-				B43C304F29B3CB5F0041407D /* ViewController.swift */,
-				B43C305129B3CB5F0041407D /* Main.storyboard */,
 				B43C305429B3CB600041407D /* Assets.xcassets */,
 				B43C305629B3CB600041407D /* LaunchScreen.storyboard */,
 				B43C305929B3CB600041407D /* Info.plist */,
 			);
-			path = UserDefaults_URLCashe;
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		B43C306029B3CC220041407D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B43C306329B3D0910041407D /* ContactsTableViewController.swift */,
+				B43C306529B3D4C10041407D /* CasheTableViewController.swift */,
+				B43C307429B3DDDC0041407D /* AddNewContactViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B43C306129B3CC310041407D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B43C306B29B3D5DF0041407D /* RickAndMorty.swift */,
+				B43C306D29B3D5EB0041407D /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B43C306229B3CC3A0041407D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B43C306729B3D59D0041407D /* NetworkManager.swift */,
+				B43C306929B3D5AA0041407D /* StorageManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B43C306F29B3D6010041407D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B43C307029B3D61A0041407D /* ContactTableViewCell.swift */,
+				B43C307229B3D6360041407D /* RickAndMortyTableViewCell.swift */,
+				B43C307629B3DFB00041407D /* CharachterImageView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43C305029B3CB5F0041407D /* ViewController.swift in Sources */,
+				B43C306629B3D4C10041407D /* CasheTableViewController.swift in Sources */,
+				B43C306C29B3D5DF0041407D /* RickAndMorty.swift in Sources */,
 				B43C304C29B3CB5F0041407D /* AppDelegate.swift in Sources */,
+				B43C306829B3D59D0041407D /* NetworkManager.swift in Sources */,
+				B43C307529B3DDDC0041407D /* AddNewContactViewController.swift in Sources */,
+				B43C306E29B3D5EB0041407D /* Contact.swift in Sources */,
+				B43C306A29B3D5AA0041407D /* StorageManager.swift in Sources */,
+				B43C307129B3D61A0041407D /* ContactTableViewCell.swift in Sources */,
+				B43C306429B3D0910041407D /* ContactsTableViewController.swift in Sources */,
+				B43C307329B3D6360041407D /* RickAndMortyTableViewCell.swift in Sources */,
 				B43C304E29B3CB5F0041407D /* SceneDelegate.swift in Sources */,
+				B43C307729B3DFB00041407D /* CharachterImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserDefaults_URLCashe/Info.plist;
+				INFOPLIST_FILE = UserDefaults_URLCashe/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UserDefaults_URLCashe/Info.plist;
+				INFOPLIST_FILE = UserDefaults_URLCashe/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

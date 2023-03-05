@@ -1,8 +1,9 @@
-//
-//  Contact.swift
-//  UserDefaults_URLCashe
-//
-//  Created by Айдар Нуркин on 05.03.2023.
-//
-
 import Foundation
+
+struct Contact: Codable {
+    let firstName: String
+    let lastName: String
+    var fullname: String {
+        "\(firstName) \(lastName)"
+    }
+}

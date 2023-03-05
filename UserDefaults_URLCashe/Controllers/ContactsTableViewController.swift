@@ -1,76 +1,35 @@
-//
-//  MainTableViewController.swift
-//  UserDefaults_URLCashe
-//
-//  Created by Айдар Нуркин on 05.03.2023.
-//
-
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    @IBOutlet weak var MainTableView: UITableView!
+    private var contacts: [Contact] = []
+    override func viewDidLoad() { contacts = StorageManager.shared.fetchFromFile() }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let AddNewVC = segue.destination as! AddNewContactViewController
+        AddNewVC.delegate = self
     }
-
-    @IBAction func addContact(_ sender: Any) {
-        
-    }
-    // MARK: - Table view data source
+}
+extension ContactsTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return contacts.count
     }
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contact_cell", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contact_cell", for: indexPath) as! ContactTableViewCell
+        let contact = contacts[indexPath.row]
+        cell.fullNameText.text = contact.fullname
         return cell
     }
- 
-    /*
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            contacts.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            StorageManager.shared.deleteFromFile(at: indexPath.row)
+        }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+}
+extension ContactsTableViewController: AddNewContactViewControllerDelegate {
+    func saveContact(_ contact: Contact) {
+        contacts.append(contact)
+        MainTableView.reloadData()
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

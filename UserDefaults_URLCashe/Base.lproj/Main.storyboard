@@ -125,11 +125,13 @@
                     <navigationItem key="navigationItem" title="Contacts" id="D4V-4d-xUp">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="ea9-od-yXe">
                             <connections>
-                                <action selector="addContact:" destination="0as-QX-yJN" id="9gn-JE-BY8"/>
-                                <segue destination="ovo-sd-xnp" kind="presentation" id="KZR-Ir-sHx"/>
+                                <segue destination="ovo-sd-xnp" kind="presentation" id="3YD-Nh-s21"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="MainTableView" destination="8an-n9-8TL" id="KrV-SU-WsH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMJ-hr-YRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,6 +155,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-Nv-lK9">
+                                <rect key="frame" x="0.0" y="4" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="New Contact" largeTitleDisplayMode="always" id="wcA-HE-oJJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Rbh-1Y-Mwo">
+                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                            <connections>
+                                                <action selector="cancelAction:" destination="ovo-sd-xnp" id="JVA-AO-zxk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="OVc-kU-hHr">
+                                            <connections>
+                                                <action selector="doneAction:" destination="ovo-sd-xnp" id="kTa-4C-LSb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6q5-yj-zTm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,6 +187,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sTP-RH-VgZ"/>
+                    <connections>
+                        <outlet property="doneButton" destination="OVc-kU-hHr" id="18j-jQ-sD2"/>
+                        <outlet property="firstNameTextField" destination="0PV-KJ-Dge" id="Jlz-fg-dw5"/>
+                        <outlet property="lastNameTextField" destination="VdX-yt-cgO" id="Gyo-ob-x94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVB-5o-1QA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,6 +242,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

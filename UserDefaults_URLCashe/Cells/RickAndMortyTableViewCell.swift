@@ -9,21 +9,19 @@ import UIKit
 
 class RickAndMortyTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameTextLabel: UILabel!
-    @IBOutlet weak var picture: CharachterImageView! {
+    @IBOutlet var nameTextLabel: UILabel!
+    @IBOutlet var picture: CharachterImageView! {
         didSet {
-            
+            picture.contentMode = .scaleAspectFit
+            picture.clipsToBounds = true
+            picture.layer.cornerRadius = picture.bounds.height / 2
         }
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(with result: Result?) {
+        nameTextLabel.text = result?.name
+        if let imageURL = result?.image {
+            picture.fetchImage(from: imageURL)
+        }
     }
 
 }
